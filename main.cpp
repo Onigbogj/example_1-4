@@ -25,13 +25,13 @@ int main()
 
     while (true) {
 
-        if ( aButton && dButton ) {
+        if ( gasDetector || overTempDetector ) {
             alarmState = ON;
         }
 
         alarmLed = alarmState;
 
-        if ( aButton && bButton && !cButton && !dButton) {
+        if ( aButton && dButton ) {
             alarmState = OFF;
         }
     }
