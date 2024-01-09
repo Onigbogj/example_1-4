@@ -25,7 +25,7 @@ int main()
 
     while (true) {
 
-        if ( gasDetector || overTempDetector ) {
+        if ( aButton && dButton ) {
             alarmState = ON;
         }
 
